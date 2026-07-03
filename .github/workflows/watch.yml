@@ -1,0 +1,61 @@
+name: WWE live watch
+
+on:
+  schedule:
+    # All times UTC. The script checks Eastern Time and exits
+    # instantly if no show is live, so extra runs are harmless.
+    - cron: "*/10 21-23 * * 1,2,5"
+    - cron: "*/10 0-4 * * 2,3,6"
+    - cron: "*/10 21-23 * * 6,0"
+    - cron: "*/10 0-4 * * 0,1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to run"
+        type: choice
+        default: normal
+        options: [normal, selftest, force-raw, force-smackdown, force-nxt, force-recap-raw]
+
+concurrency:
+  group: wwe-recap-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SPOILER_MODE: ${{ vars.SPOILER_MODE }}
+        run: |
+          case "${{ github.event.inputs.mode || 'normal' }}" in
+            selftest)         python bot.py --selftest ;;
+            force-raw)        python bot.py --force-show raw ;;
+            force-smackdown)  python bot.py --force-show smackdown ;;
+            force-nxt)        python bot.py --force-show nxt ;;
+            force-recap-raw)  python bot.py --force-show raw --force-recap ;;
+            *)                python bot.py ;;
+          esac
+
+      - name: Persist state
+        run: |
+          git config user.name "wwe-recap-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state || true
+          git diff --staged --quiet || (git commit -m "state: $(date -u +'%Y-%m-%d %H:%M')" && git push)
