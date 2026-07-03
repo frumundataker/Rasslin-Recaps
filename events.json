@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2026-07-18",
+    "name": "Saturday Night's Main Event",
+    "keywords": ["saturday-night", "main-event", "snme"],
+    "window": ["19:45", "23:59"]
+  },
+  {
+    "date": "2026-08-01",
+    "name": "SummerSlam — Night 1",
+    "keywords": ["summerslam"],
+    "slug": "summerslam",
+    "window": ["17:45", "23:59"]
+  },
+  {
+    "date": "2026-08-02",
+    "name": "SummerSlam — Night 2",
+    "keywords": ["summerslam"],
+    "slug": "summerslam",
+    "window": ["17:45", "23:59"]
+  },
+  {
+    "date": "2026-10-10",
+    "name": "Money in the Bank",
+    "keywords": ["money-in-the-bank", "mitb"],
+    "window": ["18:45", "23:59"]
+  }
+]

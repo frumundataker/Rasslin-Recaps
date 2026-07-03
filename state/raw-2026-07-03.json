@@ -1,0 +1,76 @@
+{
+ "url": "https://411mania.com/wrestling/test/",
+ "seen": [
+  "0d34b3034f36bf0dbb2a438ab163884d2a15c07a",
+  "2ef5f60b06daa77073296630d1792c5a5221c48e",
+  "56f0139fdc5f630187dca95e534b3ded609a85ea",
+  "6c231b910a3fd642784e3eb055d9bc1e0986069f",
+  "84a3f0242d7af12167b05a3f68400bbbf5a7e328",
+  "8edc222046d9bd6afc99aa6287f1cd8f08eea689",
+  "9e2c1db479b06a2be8a55951c373102bea084eff",
+  "c7d44a5e4996f00944934d889dc6aa6ea878c98c",
+  "dd9b58a55b456edb9c047ee1cb42110fb14b421a",
+  "ec2db20b037577fe0e9cc93c3aaea97aae60e298",
+  "ed4279731d1f9c5cc1d467745d41f4e9b7bce32a"
+ ],
+ "blocks": [
+  {
+   "text": "Hey kids! Steve Cook here with you for the latest edition of WWE Raw on Netflix! It's a double taping night in Atlantic City so everyone can go home for the holiday weekend.",
+   "bold": "",
+   "kind": "segment"
+  },
+  {
+   "text": "We're in Atlantic City! Boardwalk Hall is sold out! We look back at Saturday's Night of Champions, where IYO SKY and Oba Femi won crowns.",
+   "bold": "",
+   "kind": "segment"
+  },
+  {
+   "text": "Oba Femi's music hits! The fans chant Oba's name as he struts down to the ring with the King of the Ring crown. He issues the challenge for SummerSlam! Brock accepts, on one condition: Hell in a Cell!",
+   "bold": "",
+   "kind": "segment"
+  },
+  {
+   "text": "Rey Mysterio vs. \u201cAll Ego\u201d Ethan Page:",
+   "bold": "Rey Mysterio vs. \u201cAll Ego\u201d Ethan Page:",
+   "kind": "match"
+  },
+  {
+   "text": "Page with a headlock, Rey sends him off the ropes and gets shoulder blocked down. Rey hits the flying headscissors off the ropes. 619, then Rey goes up top and hits a frog splash for three!",
+   "bold": "",
+   "kind": "segment"
+  },
+  {
+   "text": "Winner: Rey Mysterio (7:41 shown via pinfall)",
+   "bold": "Winner: Rey Mysterio (7:41 shown via pinfall)",
+   "kind": "winner"
+  },
+  {
+   "text": "Dom and JD enter Danhausen's lab looking for their money. Dom finds a present for Danhausen from the Knicks and decides to steal it.",
+   "bold": "",
+   "kind": "segment"
+  },
+  {
+   "text": "LA Knight vs. Jimmy Uso (w/Jey Uso):",
+   "bold": "LA Knight vs. Jimmy Uso (w/Jey Uso):",
+   "kind": "match"
+  },
+  {
+   "text": "Jimmy rolls LA up for the three count after a distraction from Jey on the apron. The fans do not love that at all tonight.",
+   "bold": "",
+   "kind": "segment"
+  },
+  {
+   "text": "Winner: Jimmy Uso (8:15 shown via pinfall)",
+   "bold": "Winner: Jimmy Uso (8:15 shown via pinfall)",
+   "kind": "winner"
+  },
+  {
+   "text": "Roman says he needs to beat Seth at SummerSlam and needs his entire family to witness it. Roman accepts, brother. Roman holds up the World Championship in front of Seth as our live event comes to an end. So long for now!",
+   "bold": "",
+   "kind": "segment"
+  }
+ ],
+ "empty_runs": 0,
+ "started_posted": true,
+ "recap_posted": true
+}
